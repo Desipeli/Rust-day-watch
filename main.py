@@ -61,11 +61,11 @@ while True:
     elif event == "-TIMER-":
         new_count, new_font_size= show_input_popup(periods["day"] // 60, periods["night"] // 60, font_size)
         if new_count not in [None, "Exit"]:
-            period = new_count[0] # started, day, night
+            current_period = new_count[0] # started, day, night
             periods["day"] = new_count[1]
             periods["night"] = new_count[2]
 
-            remaining_time = periods[period]
+            remaining_time = periods[current_period]
             start_time = time.time()
         if new_font_size:
             font_size = new_font_size

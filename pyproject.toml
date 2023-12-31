@@ -7,7 +7,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pyautogui = "^0.9.54"
 pysimplegui = "^4.60.5"
 toml = "^0.10.2"
 
